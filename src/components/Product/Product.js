@@ -1,6 +1,6 @@
 import "./Product.css"
 
-const Product = ({title, image, price, rating}) => {
+const Product = ({ title, image, price, rating }) => {
     return (
         <div className="product">
             <div className="product__info">
@@ -15,7 +15,7 @@ const Product = ({title, image, price, rating}) => {
                     {Array(rating).fill().map((_, i) => (<p>⭐</p>))}
                 </div>
             </div>
-            <img 
+            <img
                 src={image}
                 alt=""
             />
