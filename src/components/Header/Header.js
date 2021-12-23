@@ -1,5 +1,5 @@
 import "./Header.css";
-import logo from "../images/amazon-logo-white.png";
+import logo from "../../images/amazon-logo-white.png";
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 

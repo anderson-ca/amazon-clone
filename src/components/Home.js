@@ -1,21 +1,28 @@
 import "./Home.css";
-import Product from "./Product";
+import Product from "./Product/Product";
 
 const Home = () => {
     return (
-        <div className="home__container">
-            <img className="home__image" alt="prime-banner" src="https://storage.googleapis.com/freesat-production-assets/styles/teaser_hero_image_1440x500_/cloud-storage/news/headliners/the-boys-amazon-original-banner-2.jpg?itok=mr64n-yN" />
-            <div className="home__row">
-                <Product />
-                <Product />
-            </div>
-            <div className="home__row">
-                <Product />
-                <Product />
-                <Product />
-            </div>
-            <div className="home__row">
-                <Product />
+        <div className="home">
+            <div className="home__container">
+                <img className="home__image" alt="prime-banner" src="https://m.media-amazon.com/images/I/81pXJW9qztL._QL85_V1_.jpg" />
+                <div className="home__row">
+                    <Product 
+                        title='The lean startup' 
+                        price={29.99} 
+                        image={"https://images-na.ssl-images-amazon.com/images/I/81RCff1NpnL.jpg"} 
+                        rating={4} 
+                        />
+                    <Product />
+                </div>
+                <div className="home__row">
+                    <Product />
+                    <Product />
+                    <Product />
+                </div>
+                <div className="home__row">
+                    <Product />
+                </div>
             </div>
         </div>
     )
